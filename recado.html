@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recado</title>
+</head>
+<body id="tres">
+    <main>
+        <form id="formrecado">
+            <input
+                type="text"
+                id="oque"
+                name="recado_oque"
+                placeholder="o que?"
+            />
+            <input
+                type="text"
+                id="como"
+                name="como_recado"
+                placeholder="como?"
+            />
+            <button
+                type="submit"
+                id="botaosalvar"
+                value="salvar"
+                ondblclick="recadoSalvo()"
+                >
+                salvar
+            </button>
+        </form>
+        <table id="tabela">
+            <thead class="thead">
+                <th class="tabela_id">id</th>
+                <th class="tabela_oque">o que?</th>
+                <th class="tabela_como">como?</th>
+                <th class="tabela_botao">ação</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <button id="sair">
+            <a href="./login.html">sair</a>
+        </button>
+    </footer>
+    <script src="./recado.js"></script>
+</body>
+</html>

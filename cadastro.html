@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body id="dois">
+    <div id="container">
+        <div class="section"></div>
+        <div class="section">
+            <form id="formcadastro">
+                <div id="titulo">
+                    <h1>criar conta</h1>
+                </div>
+                <div class="inputs">
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="email"
+                    />
+
+                    <input
+                        id="senha"
+                        name="senha"
+                        type="password"
+                        placeholder="senha"
+                    />
+
+                    <input
+                        type="password"
+                        id="repetesenha"
+                        name="repetesenha"
+                        placeholder="repetir senha"
+                    />
+                </div>
+                <input
+                    type="button"
+                    id="btn_criar_conta"
+                    onclick="criarConta()"
+                    value="cadastre"
+                />
+                <button>
+                    <a href="./login.html">entrar</a>
+                </button>
+            </form>
+        </div>
+        <script src="cadastro.js"></script>
+</body>
+</html>

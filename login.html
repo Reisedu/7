@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body id="um">
+    <div id="container">
+        <div class="section"></div>
+        <div class="section">
+            <form id="formlogin">
+                <div id="titulo">
+                    <h1>entrar</h1>
+                </div>
+                <div class="inputs">
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="email"
+                    />
+
+                    <input
+                        id="senha"
+                        name="senha"
+                        type="password"
+                        placeholder="senha"
+                    />
+                </div>
+                <button
+                    id="entrar"
+                    type="button"
+                    onclick="login()"
+                >
+                entrar
+                </button>
+                <br>
+                <button id="criar-conta">
+                    <a href="./cadastro.html">criar</a>
+                </button>
+            </form>
+        </div>
+    </div>
+<script src="./login.js"></script>
+</body>
+</html>
