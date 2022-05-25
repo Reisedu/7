@@ -1,3 +1,7 @@
+const session = localStorage.getItem("session");
+let logged = sessionStorage.getItem("logged");
+const qSelect = (select) => document.querySelector(select);
+
 const form = document.querySelector("#formcadastro");
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
