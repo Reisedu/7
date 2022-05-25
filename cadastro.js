@@ -1,12 +1,12 @@
-const form = document.querySelector('#formcadastro');
+const form = document.querySelector("#formcadastro");
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
     const user JSON.parse(localStorage.getItem("users") || "[]");
-    const login = form.email.value;
+    const email = form.email.value;
     const senha = form.senha.value;
     const repetesenha = form.repetesenha.value;
     const usuarioexiste = user.some(
-        (usuario) => usuario.username === email
+        (usuario) => usuario.email === email
     );
     if(usuarioexiste){
         alert("email ja cadastrado");
@@ -18,12 +18,10 @@ form.addEventListener("submit", (event) =>{
         return;
     }
     user.push({
-        username: email;
-        password: senha;
+        email: email;
+        senha: senha;
     });
     localStorage.setItem("users", JSON.strigify(user));
     alert("cadastrado");
     location.href"login.html";
-
 });
-
